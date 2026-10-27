@@ -1,9 +1,12 @@
+import generalContractorImage from "../assets/generalcontractor.jpg";
+import designAndBuildImage from "../assets/designandbuild.jpg";
+
 function ServiceCard() {
   const service = [
     {
       id: 1,
       name: "General Contractor",
-      src: "/src/assets/generalcontractor.jpg",
+      src: generalContractorImage,
       alt: "General Contractor",
       description:
         "Deliver your masterpiece design from the beginning of piling works until fully-functioning building",
@@ -11,7 +14,7 @@ function ServiceCard() {
     {
       id: 2,
       name: "Design & Build",
-      src: "/src/assets/designandbuild.jpg",
+      src: designAndBuildImage,
       alt: "Design And Build",
       description:
         "Meet our designer, we design your dream building by applying low maintenance, high durability, and efficient cost principle",

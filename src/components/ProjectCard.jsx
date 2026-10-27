@@ -1,34 +1,40 @@
+import projectRiverPadel from "../assets/projectriverpadel.JPG";
+import projectJungleTennis from "../assets/projectjungletennis.JPG";
+import projectIca from "../assets/projectica.jpeg";
+import projectBaramulti from "../assets/baramulti.png";
+import projectSenres from "../assets/projectsenres.JPG";
+
 function ProjectCard() {
   const projectList = [
     {
       id: 1,
       name: "River Padel",
       year: "2024-2025",
-      img: "/src/assets/projectriverpadel.JPG",
+      img: projectRiverPadel,
     },
     {
       id: 2,
       name: "Jungle Tennis",
       year: "2023-2024",
-      img: "/src/assets/projectjungletennis.JPG",
+      img: projectJungleTennis,
     },
     {
       id: 3,
       name: "Integrated Children Academy",
       year: "2024",
-      img: "/src/assets/projectica.jpeg",
+      img: projectIca,
     },
     {
       id: 4,
       name: "Baramulti",
       year: "2025-2026",
-      img: "/src/assets/projectbaramulti.png",
+      img: projectBaramulti,
     },
     {
       id: 5,
       name: "Senayan Residence",
       year: "2018-2026",
-      img: "/src/assets/projectsenres.JPG",
+      img: projectSenres,
     },
   ];
 

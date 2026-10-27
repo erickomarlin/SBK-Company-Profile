@@ -1,28 +1,34 @@
+import riverPadelLogo from "../assets/riverpadel.jpeg";
+import jungleTennisLogo from "../assets/jungletennis.webp";
+import icaLogo from "../assets/ica.png";
+import senresLogo from "../assets/senres.png";
+import baramultiLogo from "../assets/baramulti.png";
+
 function ClientCard() {
   const clientImage = [
     {
       id: 1,
-      img: "/src/assets/riverpadel.jpeg",
+      img: riverPadelLogo,
       alt: "River Padel",
     },
     {
       id: 2,
-      img: "/src/assets/jungletennis.webp",
+      img: jungleTennisLogo,
       alt: "Jungle Tennis",
     },
     {
       id: 3,
-      img: "/src/assets/ica.png",
+      img: icaLogo,
       alt: "Integrated Children Academy",
     },
     {
       id: 4,
-      img: "/src/assets/senres.png",
+      img: senresLogo,
       alt: "Senayan Residence",
     },
     {
       id: 5,
-      img: "/src/assets/baramulti.png",
+      img: baramultiLogo,
       alt: "Baramulti",
     },
   ];
