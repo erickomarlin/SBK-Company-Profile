@@ -1,6 +1,6 @@
 import riverPadelLogo from "../assets/riverpadel.jpeg";
 import jungleTennisLogo from "../assets/jungletennis.webp";
-import icaLogo from "../assets/ica.png";
+import icaLogo from "../assets/ICA.png";
 import senresLogo from "../assets/senres.png";
 import baramultiLogo from "../assets/baramulti.png";
 
