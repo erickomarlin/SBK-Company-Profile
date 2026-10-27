@@ -1,20 +1,17 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.jpg";
+import logo2 from "../assets/logo2.jpg";
 import HamburgerMenu from "./HamburgerMenu";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full h-12 bg-slate-900 opacity-95 text-white text-sm font-semibold px-6 flex items-center justify-between shadow-md">
+    <nav className="sticky top-0 z-50 w-full h-12 bg-slate-900 opacity-95 text-white text-sm font-semibold px-6 flex items-center justify-between shadow-md md:px-10">
       {/* Logo & Brand Title */}
       <NavLink to="/" className="flex items-center gap-3">
         <img
-          src={logo}
+          src={logo2}
           alt="SBK Logo"
-          className="h-8 w-auto object-contain rounded-md"
+          className="h-8 w-auto object-contain rounded-full"
         />
-        <h3 className="text-base font-semibold">
-          PT. Semesta Building Konstruksi
-        </h3>
       </NavLink>
 
       {/* Desktop Navigation Links */}
@@ -33,15 +30,39 @@ export default function Navbar() {
             isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
           }
         >
-          About
+          About Us
         </NavLink>
         <NavLink
-          to="/team"
+          to="/services"
+          className={({ isActive }) =>
+            isActive ? "text-blue-400" : "hover:text-gray-300"
+          }
+        >
+          Services
+        </NavLink>
+        <NavLink
+          to="/projects"
           className={({ isActive }) =>
             isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
           }
         >
-          Team
+          Projects
+        </NavLink>
+        <NavLink
+          to="/clients"
+          className={({ isActive }) =>
+            isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
+          }
+        >
+          Clients
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
+          }
+        >
+          Contact Us
         </NavLink>
       </div>
 

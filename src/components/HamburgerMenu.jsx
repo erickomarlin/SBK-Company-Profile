@@ -25,7 +25,7 @@ export default function HamburgerMenu() {
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-slate-800 rounded-md shadow-lg py-2 z-50 border border-slate-700">
+        <div className="absolute right-0 mt-2 w-35 bg-slate-800 rounded-md shadow-lg py-2 z-50 border border-slate-700">
           <NavLink
             to="/"
             onClick={closeMenu}
@@ -46,10 +46,10 @@ export default function HamburgerMenu() {
               }`
             }
           >
-            About
+            About Us
           </NavLink>
           <NavLink
-            to="/team"
+            to="/services"
             onClick={closeMenu}
             className={({ isActive }) =>
               `block px-4 py-2 text-sm hover:bg-slate-700 ${
@@ -57,7 +57,40 @@ export default function HamburgerMenu() {
               }`
             }
           >
-            Team
+            Services
+          </NavLink>
+          <NavLink
+            to="/projects"
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              `block px-4 py-2 text-sm hover:bg-slate-700 ${
+                isActive ? "text-blue-400 font-bold" : "text-white"
+              }`
+            }
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            to="/clients"
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              `block px-4 py-2 text-sm hover:bg-slate-700 ${
+                isActive ? "text-blue-400 font-bold" : "text-white"
+              }`
+            }
+          >
+            Clients
+          </NavLink>
+          <NavLink
+            to="/contact"
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              `block px-4 py-2 text-sm hover:bg-slate-700 ${
+                isActive ? "text-blue-400 font-bold" : "text-white"
+              }`
+            }
+          >
+            Contact Us
           </NavLink>
         </div>
       )}
