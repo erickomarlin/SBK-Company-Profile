@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-main: #0f172b;
+  --color-accent: #7e2a0c;
+  --color-secondarymain: #024a70;
+  --color-secondaryaccent: #502010;
+}
+
+@layer components {
+  .heading {
+    @apply text-5xl font-bold text-accent;
+  }
+  .projectImages {
+    @apply transition-all hover:scale-150 w-full h-40 object-cover rounded-lg;
+  }
+}

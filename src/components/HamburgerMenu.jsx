@@ -31,7 +31,9 @@ export default function HamburgerMenu() {
             onClick={closeMenu}
             className={({ isActive }) =>
               `block px-4 py-2 text-sm hover:bg-slate-700 ${
-                isActive ? "text-white font-bold" : "text-white"
+                isActive
+                  ? "text-white font-bold active:scale-95"
+                  : "text-white active:scale-95"
               }`
             }
           >
@@ -42,7 +44,9 @@ export default function HamburgerMenu() {
             onClick={closeMenu}
             className={({ isActive }) =>
               `block px-4 py-2 text-sm hover:bg-slate-700 ${
-                isActive ? "text-blue-400 font-bold" : "text-white"
+                isActive
+                  ? "text-blue-400 font-bold active:scale-95"
+                  : "text-white active:scale-95"
               }`
             }
           >
@@ -53,7 +57,9 @@ export default function HamburgerMenu() {
             onClick={closeMenu}
             className={({ isActive }) =>
               `block px-4 py-2 text-sm hover:bg-slate-700 ${
-                isActive ? "text-blue-400 font-bold" : "text-white"
+                isActive
+                  ? "text-blue-400 font-bold active:scale-95"
+                  : "text-white active:scale-95"
               }`
             }
           >
@@ -64,7 +70,9 @@ export default function HamburgerMenu() {
             onClick={closeMenu}
             className={({ isActive }) =>
               `block px-4 py-2 text-sm hover:bg-slate-700 ${
-                isActive ? "text-blue-400 font-bold" : "text-white"
+                isActive
+                  ? "text-blue-400 font-bold active:scale-95"
+                  : "text-white active:scale-95"
               }`
             }
           >
@@ -75,7 +83,9 @@ export default function HamburgerMenu() {
             onClick={closeMenu}
             className={({ isActive }) =>
               `block px-4 py-2 text-sm hover:bg-slate-700 ${
-                isActive ? "text-blue-400 font-bold" : "text-white"
+                isActive
+                  ? "text-blue-400 font-bold active:scale-95"
+                  : "text-white active:scale-95"
               }`
             }
           >
@@ -86,7 +96,9 @@ export default function HamburgerMenu() {
             onClick={closeMenu}
             className={({ isActive }) =>
               `block px-4 py-2 text-sm hover:bg-slate-700 ${
-                isActive ? "text-blue-400 font-bold" : "text-white"
+                isActive
+                  ? "text-blue-400 font-bold active:scale-95"
+                  : "text-white active:scale-95"
               }`
             }
           >

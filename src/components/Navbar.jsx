@@ -4,9 +4,12 @@ import HamburgerMenu from "./HamburgerMenu";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full h-12 bg-slate-900 opacity-95 text-white text-sm font-semibold px-6 flex items-center justify-between shadow-md md:px-10">
+    <nav className="sticky top-0 z-50 w-full h-16 bg-main opacity-95 text-white text-sm font-semibold px-6 flex items-center justify-between shadow-md md:px-10">
       {/* Logo & Brand Title */}
-      <NavLink to="/" className="flex items-center gap-3">
+      <NavLink
+        to="/"
+        className="flex items-center gap-3 hover:transition-all hover:scale-105 active:scale-100"
+      >
         <img
           src={logo2}
           alt="SBK Logo"
@@ -19,7 +22,9 @@ export default function Navbar() {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
+            isActive
+              ? "text-blue-400 font-bold active:scale-95"
+              : "hover:text-gray-300 active:scale-95"
           }
         >
           Home
@@ -27,7 +32,9 @@ export default function Navbar() {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
+            isActive
+              ? "text-blue-400 font-bold active:scale-95"
+              : "hover:text-gray-300 active:scale-95"
           }
         >
           About Us
@@ -35,7 +42,9 @@ export default function Navbar() {
         <NavLink
           to="/services"
           className={({ isActive }) =>
-            isActive ? "text-blue-400" : "hover:text-gray-300"
+            isActive
+              ? "text-blue-400 active:scale-95"
+              : "hover:text-gray-300 active:scale-95"
           }
         >
           Services
@@ -43,7 +52,9 @@ export default function Navbar() {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
+            isActive
+              ? "text-blue-400 font-bold active:scale-95"
+              : "hover:text-gray-300 active:scale-95"
           }
         >
           Projects
@@ -51,7 +62,9 @@ export default function Navbar() {
         <NavLink
           to="/clients"
           className={({ isActive }) =>
-            isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
+            isActive
+              ? "text-blue-400 font-bold active:scale-95"
+              : "hover:text-gray-300 active:scale-95"
           }
         >
           Clients
@@ -59,7 +72,9 @@ export default function Navbar() {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-blue-400 font-bold" : "hover:text-gray-300"
+            isActive
+              ? "text-blue-400 font-bold active:scale-95"
+              : "hover:text-gray-300 active:scale-95"
           }
         >
           Contact Us
